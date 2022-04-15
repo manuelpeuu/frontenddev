@@ -36,20 +36,73 @@
     <h3>Ejemplo de formulario</h3>
     <form action="" method="">
         <p>
-        <label for="">Nombre</label>
-        <input type="text">
+          <label for="">Nombre</label>
+          <input type="text">
         </p>
         <p>
-            <input type="text" placeholder="Apellido">
+          <input type="text" placeholder="Apellido">
         </p>
         <p>
-            <label for="">Contraseña</label>
-            <input type="password">
+          <label for="">Contraseña</label>
+          <input type="password">
+        </p>
+        <p>
+          <label for="sexo">Sexo</label>
+            <ul>
+                <li>
+                    <input type="radio" value="hombre">
+                    <label>Hombre</label>
+                </li>
+                <li>
+                    <input type="radio" value="mujer">
+                    <label>Mujer</label>
+                </li>
+            </ul>
+        </p>
+        <p>
+            <label>Hobbies</label>
+              <ul>
+                  <li>
+                      <input type="checkbox" name="hobbies[]" value="bailar" id="bailar">
+                      <label for="bailar">Bailar</label>                    
+                 </li>
+                  <li>
+                      <input type="checkbox" name="hobbies[]" value="cantar" id="cantar">
+                      <label for="cantar">Cantar</label>                    
+                 </li>
+                  <li>
+                      <input type="checkbox" name="hobbies[]" value="nadar" id="nadar">
+                      <label for="nadar">Nadar</label>                    
+                  </li>
+                  <li>
+                    <input type="checkbox" name="hobbies[]" value="correr" id="correr">
+                    <label for="correr">Correr</label>                    
+                </li>
+              </ul>
+        </p>
+        <p>
+            <label for="titulo">Titulo</label>
+            <select name="titulo">
+                <option value="primario">Primarioo</option>
+                <option value="secundario">Secundario</option>
+                <option value="terciario">Terciario</option>
+                <option value="universitario">Universitario</option>
+            </select>
+        </p>
+        <p>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
         </p>
 
 
     </form>
-
+    
+<audio src="la-atmosfera_4.mp3" controls></audio>
+<video src="VID_20200205_132631.mp4" controls></video>
 
 </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Comparación</title>
+</head>
+
+<body>
+    <script>
+        var v1, v2, v3, v4, v5;
+
+        v1 = prompt('Ingrese el primer valor a comparar', '');
+        v2 = prompt('Ingrese el segundo valor a comparar', '');
+        v3 = prompt('Ingrese el tercer valor a comparar', '');
+        v4 = prompt('Ingrese el cuarto valor a comparar', '');
+        v5 = prompt('Ingrese el quinto valor a comparar', '');
+
+        v1 = parseInt(v1);
+        v2 = parseInt(v2);
+        v3 = parseInt(v3);
+        v4 = parseInt(v4);
+        v5 = parseInt(v5);
+
+        var compara = [v1, v2, v3, v4, v5];
+        var mayor = " ";
+        mayor = 0;
+
+/* Quise que sea parecido al anterior, que se ingresen los numeros, y que muestre que se ingresó */
+
+        document.write('Los numeros ingresados son: ')
+
+        for (var i = 0; i < compara.length; i++) {
+
+            document.write(compara[i] + " ");
+        }
+
+        document.write('<br/>');
+
+        for (var i = 0; i <= compara.length; i++) {
+            if (compara[i] > mayor) {
+                mayor = compara[i];
+            }
+
+        }
+        document.write('El mayor de los numeros es: ' + mayor)
+
+    </script>
+
+</body>
+
+</html>

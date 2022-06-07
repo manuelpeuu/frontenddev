@@ -64,4 +64,8 @@ h1, h2 {
     text-align: center;
     padding: 50px 20px;
 }
+
+.staff {
+    background: #efefef;
+}
     /* font-family: 'Alfa Slab One', cursive; */
